@@ -13,7 +13,9 @@ li {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
-
+img {
+    display: block;
+}
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -88,6 +90,7 @@ color: #404BBF;
 /*secction 1*/
 .section-one {
     background-color: #2E2F42;
+    padding: 188px 0
 }
 .title {
     max-width: 496px;  
@@ -191,7 +194,7 @@ background-color: #404BBF;
 .ul-names {
     display: flex;
     gap: 24px;
-    flex-basis: calc((100%-96px)/4);
+    flex-basis: calc((100% - 72px) / 4);
 }
 .team-list {
     background-color: #FFFFFF;
@@ -202,7 +205,7 @@ background-color: #404BBF;
     gap: 40px;
 }
 .container-names {
-    padding: 32px 0
+    padding: 32px 0;
 }
 /*section 3*/
 /*section 4*/
@@ -210,7 +213,7 @@ background-color: #404BBF;
     background-color: #FFFFFF;
 }
 .sect-four-title {
-     padding-bottom: 72px;
+    margin-bottom: 72px;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
@@ -236,7 +239,14 @@ background-color: #404BBF;
 .ul-apps {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+.container-apps {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+}
+.sect-four-apps {
     flex-basis: calc((100% - 48px) / 3);
 }
 
