@@ -1,3 +1,4 @@
+/* reset */
 a {
     text-decoration: none;
 }
@@ -5,7 +6,14 @@ a {
 ul,
 li {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -13,7 +21,16 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: auto;
+}
+
 /* header and footer*/
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
 .logo{
 color: #4D5AE5;
 font-family: "Raleway", sans-serif;
@@ -36,7 +53,7 @@ font-family: "Raleway", sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 1.17;
-        letter-spacing: 0.03em;e;
+        letter-spacing: 0.03em;
 }
 .footer-dark {
     background-color: #2E2F42;
@@ -44,6 +61,8 @@ font-family: "Raleway", sans-serif;
 /* header and footer*/
 /* nav menu*/
 .list-menu {
+        display: block;
+        padding: 24px 0;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
@@ -62,7 +81,8 @@ color: #404BBF;
     color:#434455;
 }
 .add-cont {
-    font-style:normal ;
+    font-style: normal;
+    margin-left: auto;
 }
 /*adrres menu*/
 /*secction 1*/
@@ -70,6 +90,10 @@ color: #404BBF;
     background-color: #2E2F42;
 }
 .title {
+    width: 496px;  
+    display: block; 
+    margin: 0 auto;
+    padding-bottom: 48px;
     color: #FFFFFF;
         font-size: 56px;
         font-weight: 700;
@@ -78,6 +102,10 @@ color: #404BBF;
         text-align: center;
 }
 .btn {
+    display: block;
+    margin: 0 auto;
+    width: 169px;
+    height: 56px;
     cursor: pointer;
         font-size: 16px;
         font-weight: 500;
@@ -85,6 +113,12 @@ color: #404BBF;
         letter-spacing: 0.04em;
         background-color: #4D5AE5;
         color: #FFFFFF;
+        border: none;
+        border-radius: 4px  ;
+}
+
+.container-btn{
+    padding: 188px 0;
 }
 .btn:hover, .btn:focus {
 background-color: #404BBF;
@@ -97,6 +131,7 @@ background-color: #404BBF;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2E2F42;
+        margin-bottom: 8px;
 }
 .sect-two-p {
         font-size: 16px;
@@ -104,12 +139,18 @@ background-color: #404BBF;
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
+.ul-strengths {
+    display: flex;
+    gap: 24px;
+    flex-basis: calc((100% - 72px) / 4);
+}
 /*section 2*/
 /*section 3*/
 .section-three {
     background-color: #F4F4FD;
 }
 .sect-three-title {
+    padding: 72px 0;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
@@ -125,6 +166,7 @@ background-color: #404BBF;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2E2F42;
+        margin-bottom: 8px;
 }
 .names-info {
         font-size: 16px;
@@ -134,8 +176,17 @@ background-color: #404BBF;
         text-align: center;
         color: #434455;
 }
+.ul-names {
+    display: flex;
+    gap: 24px;
+    flex-basis: calc((100%-96px)/4);
+}
 .team-list {
     background-color: #FFFFFF;
+}
+.text-names {
+    margin-top: 32px;
+    gap: 40px;
 }
 /*section 3*/
 /*section 4*/
@@ -143,6 +194,7 @@ background-color: #404BBF;
     background-color: #FFFFFF;
 }
 .sect-four-title {
+     padding-bottom: 72px;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
@@ -157,6 +209,7 @@ background-color: #404BBF;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2E2F42;
+        margin-bottom: 8px;
 }
 .apps-info {
         font-size: 16px;
@@ -164,10 +217,45 @@ background-color: #404BBF;
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
+.ul-apps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+/* section4 */
+/* footer */
 .footer-info {
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #F4F4FD;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+.nav-ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.add-ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-logo  {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+.section-container {
+    padding: 120px 0;
 }
