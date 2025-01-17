@@ -119,7 +119,7 @@ color: #404BBF;
 /*secction 1*/
 .section-one {
     background-color: #2E2F42;
-    padding: 188px 0
+    padding: 188px 0;
 }
 .section-container {
     padding: 120px 0;
@@ -279,6 +279,7 @@ background-color: #404BBF;
 .text-apps {
 padding: 32px 16px;
 border: 1px solid #e7e9fc; 
+border-top: none;
 }
 /* .container-apps {
     padding: 32px 16px;
