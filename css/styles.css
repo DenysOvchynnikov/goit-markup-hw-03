@@ -59,6 +59,7 @@ font-family: "Raleway", sans-serif;
 }
 .footer-dark {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 .header-logo {
     padding: 24px 0;
@@ -67,6 +68,10 @@ font-family: "Raleway", sans-serif;
 .header-container {
     display: flex;
     align-items: center;
+}
+.last-logo {
+        display: inline-block;
+            margin-bottom: 16px;
 }
 /* header and footer*/
 /* nav menu*/
