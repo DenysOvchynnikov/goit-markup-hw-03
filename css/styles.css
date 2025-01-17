@@ -59,6 +59,7 @@ font-family: "Raleway", sans-serif;
 }
 .footer-dark {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 .header-logo {
     padding: 24px 0;
@@ -71,9 +72,6 @@ font-family: "Raleway", sans-serif;
 .last-logo {
         display: inline-block;
             margin-bottom: 16px;
-}
-.container-menu {
-    padding: 100px 0;
 }
 /* header and footer*/
 /* nav menu*/
@@ -231,17 +229,15 @@ background-color: #404BBF;
 .ul-names {
     display: flex;
     gap: 24px;
-    flex-basis: calc((100% - 72px) / 4);
 }
 .team-list {
     background-color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
 }
 .text-names {
     margin-top: 32px;
     gap: 40px;
-}
-.container-names {
     padding: 32px 0;
 }
 /*section 3*/
@@ -279,6 +275,10 @@ background-color: #404BBF;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+}
+.text-apps {
+padding: 32px 16px;
+border: 1px solid #e7e9fc; 
 }
 /* .container-apps {
     padding: 32px 16px;
